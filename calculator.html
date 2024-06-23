@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="cal">
+        <input type="text" name="" placeholder="0" id="input">
+        <div class="key">
+            <table>
+                <tr>
+                    <td><button onclick="clearDisplay()" class="operate" style="color:red;">Ac</button></td>
+                    <td><button onclick="back()" class="operate">C</button></td>
+                    <td><button onclick="btn('/')" class="operate">/</button></td>
+                    <td><button onclick="btn('*')" class="operate">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="btn('7')" class="num">7</button></td>
+                    <td><button onclick="btn('8')" class="num">8</button></td>
+                    <td><button onclick="btn('9')" class="num">9</button></td>
+                    <td><button onclick="btn('-')" class="operate">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="btn('4')" class="num">4</button></td>
+                    <td><button onclick="btn('5')" class="num">5</button></td>
+                    <td><button onclick="btn('6')" class="num">6</button></td>
+                    <td><button onclick="btn('.')" class="operate">.</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="btn('1')" class="num">1</button></td>
+                    <td><button onclick="btn('2')" class="num">2</button></td>
+                    <td><button onclick="btn('3')" class="num">3</button></td>
+                    <td><button onclick="btn('+')" class="operate">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="btn('00')" class="operate">00</button></td>
+                    <td><button onclick="btn('0')" class="operate">0</button></td>
+                    <td colspan="2"><button onclick="cal()" class="operate" style="width: 100%;">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calcu.js"></script>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    });
+</script>
